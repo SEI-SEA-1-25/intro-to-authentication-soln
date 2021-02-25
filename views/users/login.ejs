@@ -1,0 +1,15 @@
+<h4>Log in!</h4>
+
+<% if (errors) { %>
+  <%= errors %>
+<% } %>
+
+<form action="/users/login" method="POST">
+  <label for="email-input">Email</label>
+  <input type="text" name="email">
+
+  <label for="password-input">Password</label>
+  <input type="password" name="password">
+
+  <input type="submit" value="Log in!">
+</form>
